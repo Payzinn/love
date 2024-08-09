@@ -33,3 +33,9 @@ img{
     gap: 5px;
 }
 
+@media(max-width: 425px){
+    .main{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
