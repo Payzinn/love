@@ -9,6 +9,7 @@
 
 body{
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
 }
 p{
     text-align: justify;
@@ -33,9 +34,31 @@ img{
     gap: 5px;
 }
 
+.phone{
+    display: none;
+}
+
 @media(max-width: 425px){
     .main{
-        margin-right: 0;
-        margin-left: 0;
+        margin-right: 0px;
+        margin-left: 0px;
     }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .phone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        display: none;
+    }
+
+    
 }
